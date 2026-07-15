@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #0a0a0a;
+    --bg-soft: #0c0c0c;
+    --bg-elevated: #111;
+
+    --text-main: #e5e5e5;
+    --text-muted: #a1a1a1;
+    --text-subtle: #555;
+
+    --accent: #d4ff3f;
+    --accent-dark: #b6e600;
+
+    --border-muted: #1a1a1a;
+
+    --font-body: "Space Grotesk", system-ui, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+  }
+}
+
+/* ── MODO ALTO CONTRASTE (demo) ── */
+body.high-contrast {
+  --bg-main: #000000 !important;
+  --bg-soft: #000000 !important;
+  --text-main: #ffffff !important;
+  --accent: #ffffff !important;
+  --border-muted: #ffffff !important;
+  filter: contrast(1.5);
+}
+
+body.high-contrast * {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+body.high-contrast img,
+body.high-contrast video {
+  filter: grayscale(1) contrast(1.5);
+}
+
+body.high-contrast a,
+body.high-contrast button {
+  outline: 2px solid #fff !important;
+  outline-offset: 2px;
+}
+
+/* ── MODO DALTÓNICO (deuteranopía) ── */
+body.colorblind {
+  filter: url(#colorblind-filter);
+}
