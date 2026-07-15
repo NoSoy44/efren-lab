@@ -15,16 +15,16 @@ export default function Home() {
           Experimentos interactivos
         </h1>
         <p className="text-[#888] font-mono text-sm mt-4 max-w-2xl">
-          Demos front-end migradas del{" "}
+          Acá dejo el código de los experimentos que construyo para el{" "}
           <a
             href="https://efrenmunoz.cl/lab"
             target="_blank"
             rel="noreferrer"
             className="text-[#D4FF3F] hover:underline"
           >
-            Lab de efrenmunoz.cl
+            Lab de mi portafolio
           </a>
-          , publicadas una por una: canvas, voz, accesibilidad, IA y visión por computadora.
+          : canvas, voz, accesibilidad e IA aplicada. Los voy subiendo de a uno.
         </p>
       </header>
 

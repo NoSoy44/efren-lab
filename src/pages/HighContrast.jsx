@@ -53,8 +53,10 @@ export default function HighContrast() {
           Modo alto contraste
         </h1>
         <p className="font-mono text-xs text-[#888] mb-8">
-          Activa un modo de visualización optimizado para personas con baja visión o
-          daltonismo. El cambio se aplica a toda la página.
+          Cambio la paleta de toda la página a blanco y negro puro y apago animaciones y
+          sombras. Lo hice pensando en gente con baja visión. El segundo modo simula cómo se
+          ve la página para alguien con deuteranopía (dificultad para distinguir rojo de
+          verde). Activa uno y mira el bloque de ejemplo de abajo para notar la diferencia.
         </p>
 
         <div className="border border-[#D4FF3F]/20 bg-[#0c0c0c] p-5 space-y-4">
@@ -91,6 +93,39 @@ export default function HighContrast() {
               página
             </p>
           )}
+        </div>
+
+        {/* Bloque de ejemplo — sin esto el toggle no muestra nada */}
+        <div className="mt-10 border border-[#1a1a1a] bg-[#0c0c0c] p-6 space-y-4">
+          <span className="font-mono text-[9px] uppercase tracking-widest text-[#555]">
+            Contenido de ejemplo
+          </span>
+          <h2 className="text-xl font-black uppercase tracking-tight text-white">
+            Estado del servidor
+          </h2>
+          <p className="text-sm text-[#ccc] leading-relaxed">
+            Así se vería una tarjeta cualquiera de un dashboard: texto, colores de estado y
+            botones. Prueba los dos modos y compara cuánto cambia la legibilidad.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <span className="text-xs font-mono px-3 py-1 rounded-full bg-green-500/15 text-green-400 border border-green-500/30">
+              ● Operativo
+            </span>
+            <span className="text-xs font-mono px-3 py-1 rounded-full bg-red-500/15 text-red-400 border border-red-500/30">
+              ● Con errores
+            </span>
+            <span className="text-xs font-mono px-3 py-1 rounded-full bg-yellow-500/15 text-yellow-400 border border-yellow-500/30">
+              ● En revisión
+            </span>
+          </div>
+          <div className="flex gap-3 pt-2">
+            <button className="font-mono text-[11px] uppercase tracking-widest text-black bg-[#D4FF3F] px-4 py-2 hover:bg-[#B6E600] transition-colors">
+              Reiniciar servicio
+            </button>
+            <button className="font-mono text-[11px] uppercase tracking-widest text-[#888] border border-[#333] px-4 py-2 hover:border-[#555] transition-colors">
+              Ver logs
+            </button>
+          </div>
         </div>
       </div>
     </main>

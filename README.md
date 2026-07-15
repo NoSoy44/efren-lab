@@ -1,6 +1,6 @@
 # efren-lab
 
-Colección de experimentos front-end interactivos: canvas, voz, accesibilidad, IA aplicada y visión por computadora. Migrados poco a poco desde el [Lab de efrenmunoz.cl](https://efrenmunoz.cl/lab), uno por uno, cada uno como su propia página dentro de esta app.
+Este es el código fuente del [Lab de mi portafolio](https://efrenmunoz.cl/lab), donde pruebo cosas que no caben en un proyecto de cliente: canvas, reconocimiento de voz, accesibilidad, IA aplicada, visión por computadora. Voy migrando cada demo a este repo por separado, a medida que tengo tiempo.
 
 ## Experimentos
 
@@ -26,8 +26,8 @@ npm run dev
 
 ## Stack
 
-Vite + React 19 + React Router + Tailwind CSS v4.
+Vite, React 19, React Router y Tailwind CSS v4.
 
 ## Autor
 
-[Efren Muñoz](https://efrenmunoz.cl)
+Soy Efren Muñoz, desarrollador front-end. Portafolio en [efrenmunoz.cl](https://efrenmunoz.cl).
